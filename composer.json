@@ -1,0 +1,17 @@
+{
+    "name": "mallika/custom-order-processing",
+    "description": "Custom Magento 2 module for order processing with API and observer",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "require": {
+        "magento/framework": "^103.0",
+        "magento/module-sales": "^103.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Mallika\\CustomOrderProcessing\\": ""
+        }
+    }
+}

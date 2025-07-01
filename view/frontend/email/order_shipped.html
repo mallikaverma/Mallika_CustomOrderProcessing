@@ -1,0 +1,15 @@
+<!--@subject Order Shipped Notification @-->
+<!--@vars
+{"store url=\"main\"":"Magento_Store::getUrl('')",
+"var order_id":"Order ID",
+"var customer_name":"Customer Name"}
+@-->
+<div class="container" style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h1 style="color: #333;">Order Shipped Notification</h1>
+    <p>Dear {{var customer_name}},</p>
+    <p>Your order #{{var order_id}} has been shipped!</p>
+    <p>Thank you for shopping with us.</p>
+    <p style="margin-top: 20px;">
+        <a href="{{store url=""}}" style="color: #0066cc;">Visit our store</a>
+    </p>
+</div>
