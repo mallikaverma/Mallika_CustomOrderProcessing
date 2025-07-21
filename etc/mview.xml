@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Indexer:etc/mview.xsd">
+    <view id="mallika_order_status_log_index" class="Mallika\CustomOrderProcessing\Model\Indexer\OrderStatusLogIndexer" group="indexer">
+        <subscriptions>
+            <table name="mallika_order_status_log" entity_column="log_id"/>
+        </subscriptions>
+    </view>
+</config>

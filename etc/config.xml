@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <sales>
-            <custom_order_processing>
+         <custom_order_processing>
+            <rate_limit>
+                <max_requests>5</max_requests>
                 <enabled>1</enabled>
-            </custom_order_processing>
-        </sales>
+            </rate_limit>
+        </custom_order_processing>
     </default>
 </config>

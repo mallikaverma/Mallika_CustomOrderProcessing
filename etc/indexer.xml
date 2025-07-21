@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Indexer:etc/indexer.xsd">
+    <indexer id="mallika_order_status_log_indexer" view_id="mallika_order_status_log_index" class="Mallika\CustomOrderProcessing\Model\Indexer\OrderStatusLogIndexer">
+        <title translate="true">Order Status Log Index</title>
+        <description translate="true">Rebuild the custom order status log index</description>
+    </indexer>
+</config>

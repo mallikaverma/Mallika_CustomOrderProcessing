@@ -50,7 +50,7 @@ class OrderStatusChange implements ObserverInterface
                 // Log status change to custom table
                 $log = $this->orderStatusLogFactory->create();
                 $log->setData([
-                    'order_id' => $order->getId(),
+                    'order_id' => $order->getIncrementId(),
                     'old_status' => $oldStatus,
                     'new_status' => $newStatus,
                     'created_at' => date('Y-m-d H:i:s')
@@ -63,7 +63,7 @@ class OrderStatusChange implements ObserverInterface
                 }
             } catch (\Exception $e) {
                 $this->logger->error('Order status change processing failed: ' . $e->getMessage(), [
-                    'order_id' => $order->getId(),
+                    'order_id' => $order->getIncrementId(),
                     'old_status' => $oldStatus,
                     'new_status' => $newStatus
                 ]);

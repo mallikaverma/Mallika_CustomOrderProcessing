@@ -4,6 +4,7 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Mallika_CustomOrderProcessing::order_status" title="Custom Order Status API" sortOrder="10"/>
+                <resource id="Mallika_CustomOrderProcessing::order_log" title="Order Status Logs" />
             </resource>
         </resources>
     </acl>
